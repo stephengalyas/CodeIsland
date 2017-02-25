@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+  <totals>
+    <totTime>00:00:00</totTime>
+    <totScore>0</totScore>
+  </totals>
+  <levelOne>
+    <complete>true</complete>
+    <!-- Contains the position of the goblin and the main character, as well as the total time and score. -->
+    <general>
+      <mcXPos>224</mcXPos>
+      <mcYPos>-217</mcYPos>
+      <gobXPos>663</gobXPos>
+      <gobYPos>263</gobYPos>
+      <time>12:00:02</time>
+      <score>0</score>
+    </general>
+    <!-- Contains the user's progress through the level. -->
+    <progress>
+      <!--True-->
+      <gobMoveToMC>True</gobMoveToMC>
+      <!--True-->
+      <gobDialogueComp>False</gobDialogueComp>
+      <!-- The goblin runs off of the screen. -->
+      <gobLeaveScreen>false</gobLeaveScreen>
+      <!-- The main character moves towards the cave. -->
+      <MCToCave>false</MCToCave>
+    </progress>
+  </levelOne>
+  <levelTwo>
+    <complete>false</complete>
+    <!-- Contains the position of the goblin and the main character, as well as the total time and score. -->
+    <general>
+      <mcXPos>0</mcXPos>
+      <mcYPos>0</mcYPos>
+      <time>00:00:00</time>
+      <score>0</score>
+    </general>
+    <!-- Contains the user's progress through the level. -->
+    <progress>
+      <!--True-->
+      <gobMoveToMC>True</gobMoveToMC>
+      <!--True-->
+      <gobDialogueComp>True</gobDialogueComp>
+      <!-- The goblin runs off of the screen. -->
+      <gobLeaveScreen>false</gobLeaveScreen>
+      <!-- The main character moves towards the cave. -->
+      <MCToCave>false</MCToCave>
+    </progress>
+  </levelTwo>
+</config>
