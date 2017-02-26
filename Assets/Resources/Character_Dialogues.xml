@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<parent>
+	<beginner>
+		<levelOne>
+			<goblin>
+				<body>Svool! Uloold nv.</body>
+				<body>Wouldn’t this game be easier if you knew what this new comer was saying? Use this key to decode what he said. </body>
+				<body>A \ b \ c \ d \ e \ f \ g \ h \ i \ j \ k \ l \ m \ n \ o \ p \ q \ r \ s \ t \ u \ v \ w \ x \ y \ z &#10; Z\ y \ x \ w \ v \ u \ t \ s \ r \ q \ p \ o \ n \ m \ l \ k \ j \ i \ h \ g \ f \ e \ d \ c \ b \ a </body>
+				<body>It says, “Hello! Follow me!”</body>
+				<body>This was an example of learning the appropriate language to communicate.</body>
+				<body>In this case, you learned the language to communicate with the alien.</body>
+				<body>In programming, you will learn certain languages to communicate with the machine and other programmers.</body>
+			</goblin>
+		</levelOne>
+		<levelTwoCave1>
+			<instructions>
+				<body>Oh no! You’re trapped in the forbidden cave! You have to figure out how to get out.</body>
+				<body>This code looks important! Write it down so you don’t forget it.&#10;&#10;5fg4j685fg5u7x</body>
+				<body>Here is a box of 20 torches. You can use them to light your way to the back of the cave.&#10;&#10;Press 'P' to drop a torch.</body>
+			</instructions>
+			<chest>
+				<body>This treasure chest looks interesting! Try using the code from the entrance of the cave to see what is inside.</body>
+				<body>Good job! You opened the chest. This was an example of writing to a file and reading from it.&#10;You read the unlock code, you stored it on a piece of paper, then you used it to open up the treasure chest.</body>
+				<body>Inside the chest you found a key! Maybe it will fit in the door at the beginning of the cave.&#10;Go back following your torches and try it! </body>
+			</chest>
+		</levelTwoCave1>
+		<levelThree>
+			<MC>
+				<introduction>
+					<body>You got through the dark cave! Congratulations! Without the torches, you wouldn't have been able to&#10;find you way back. Their light guided you through unfamiliar territory.</body>
+					<body>Like the torches, when you write code, comments will help you when you are lost. Code without comments&#10;is like trying to find your way back through a cave without torches: it would take you very long to make your&#10;way through the mysterious passages.</body>
+					<body>By placing comments throughout your code, you help other programmers understand what your code is&#10;trying to accomplish. It can also help you remember why you wrote the code, saving you hours of heachaches.&#10;</body>
+					<body>When writing code, make sure to use comments! Both you and others will thank you later for it.</body>
+					<body>Now, you are on a new part of the island. As you move around the island, use yummy-looking&#10;objects to help you get through obstacles.</body>
+					<body>To pick up an object, press the 'Space' key. To see information on the object, press and hold the 'I' key.</body>
+				</introduction>
+				<conclusion>
+					<body>Wow, look at you! You found your way to the end of the level! Without the berries, you&#10;wouldn't have been able to accomplish this feat.</body>
+					<body>Each berry gave you a special power that enhanced your ability to get through the level.&#10;You don't know how they did this, but they sure did!</body>
+					<body>Berries are like objects in programming. Objects have different properties -- such as color,&#10;size, and weight -- and perform different functions -- such as change your speed and size.</body>
+					<body>Objects are able to hide the steps they take to make these functions happen, similar to the&#10;mysteriousness of the berries. In future levels, you will learn more&#10;about objects and their benefits.</body>
+					<body>But for now, you have completed the game. Well done! Please check our website in the future for updates to the game. Happy programming!</body>
+				</conclusion>
+			</MC>
+			<guard>
+				<endOfLevel>
+					<body>Hey! You aren't allowed to be here! Beat it!</body>
+				</endOfLevel>
+			</guard>
+		</levelThree>
+
+<levelTwo>
+     <popup-2.1>
+        <body>Use your arrow keys to follow the alien up the path. </body>
+     </popup-2.1>
+
+     <popup-2.2>
+       <body> Uh-oh! You have entered the forbidden cave! Take a look at the code used to create this
+         level and think about why this might have happened:</body>
+
+         <table>
+           <tr>
+             <td> moveLeft = </td>
+             <td>move towards cave</td>
+           </tr>
+           <tr>
+             <td> moveRight = </td>
+             <td>move towards cave</td>
+           </tr>
+           <tr>
+             <td> moveUp = </td>
+             <td>move towards cave</td>
+           </tr>
+           <tr>
+             <td> moveDown = </td>
+             <td>move towards cave</td>
+           </tr>
+         </table>
+
+     </popup-2.2>
+
+     <popup-2.3>
+       <body>You probably figured out that you went towards the cave
+          because every command, regardless of its name, tells your
+          character to move towards the cave. This is a bad example of naming.
+          Your variables, in this case moveLeft, moveRight, moveUp,
+          and moveDown, should be named according to their function.
+           For example, moveDown should make the character move down, not move towards
+           the cave.</body>
+     </popup-2.3>
+</levelTwo>
+
+<levelThree>
+    <popup-3.1>
+      
+    </popup-3.1>
+
+    <popup-3.2>
+      <body>To start, follow the arrow on the top of your screen. To place a torch, use the spacebar. To move, use your arrow keys. </body>
+    </popup-3.2>
+
+    <popup-3.3>
+      <body>This treasure chest looks interesting!
+        Try using the code from the entrance of the cave to see what is inside.</body>
+    </popup-3.3>
+
+    <popup-wrong>
+      <body>Uh-oh, that wasn’t right. Try again!</body>
+    </popup-wrong>
+
+    <popup-right>
+      <body>Good job! You opened the chest. This was an example of writing to a file and reading from it.
+        You read the unlock code, you stored it on a piece of paper, then you used it to open up the treasure
+        chest.  Inside the chest you found a key! Maybe it will fit in the door at the beginning of the cave.
+        Go back following your torches and try it! </body>
+    </popup-right>
+
+  </levelThree>
+
+<levelFour>
+      <popup-4.1>
+        <body>“Use the key to unlock the door!”</body>
+      </popup-4.1>
+
+      <popup-4.2>
+        <body>“Good job! You’re free! Wasn’t escaping the cave easier with the torches to light your way than it would have
+           been in the darkness? This shows you the importance of leaving comments in your code.
+           Leaving comments helps remind you and tells other people what your code is meant to do. </body>
+      </popup-4.2>
+
+</levelFour>
+
+</beginner>
+
+<intermediate>
+  <levelOne>
+    <popup-1.1>
+      <heading>Welcome to the beach!</heading>
+      <body>Hey!! You didn’t follow me! Where have you been?</body>
+    </popup-1.1>
+	<popup-1.2>
+      <popup-next>
+        <body>No matter, your health is low! I ahve some berries to give you,
+          but you'regoing to need to find more food quickly!</body>
+		  </popup-next>
+    </popup-1.2>
+
+    <popup-1.3>
+      <body> Click on each of the berries to eat them.</body>
+    </popup-1.3>
+
+      <popup-1.4>
+        <body>As you probably noticed, each of those berries affected your health differently.
+          While some gave you additional health, others took away some health.
+          This is because each berry is an individual object. Each object has different properties and
+          will do different things. You need more food. There was a fishing pole down the beach,
+           maybe you could use that to catch yourself some dinner. </body>
+      </popup-1.4>
+
+  </levelOne>
+
+  <levelTwo>
+    <popup>
+    <heading>Nice! You've found a fishing rod!</heading>
+    <body>Go catch 10 fish so you can replenish your health!”</body>
+    </popup>
+
+    <popup-2.1>
+      <body>“This seems to be taking a while. There is a net up the beach that might make this easier. Go find it.”</body>
+    </popup-2.1>
+
+
+  </levelTwo>
+
+</intermediate>
+</parent>
