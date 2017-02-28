@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+  <!-- General data. -->
+  <general username="teampython">
+    <time>0.47839893</time>
+    <!-- The number of minutes the user has played the level. -->
+    <score>0</score>
+  </general>
+</config>
