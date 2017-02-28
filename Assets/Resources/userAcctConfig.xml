@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+  <account userName="teampython" active="true">
+    <!-- Account information -->
+    <firstName>Team</firstName>
+    <lastName>Python</lastName>
+    <userName>teampython</userName>
+    <password>teampython</password>
+    <email><![CDATA[stephen.galyas@student.fairfield.edu]]></email>
+    <student>True</student>
+    <!-- Progress -->
+    <beachComp>False</beachComp>
+    <caveComp>False</caveComp>
+    <forestComp>False</forestComp>
+  </account>
+</config>

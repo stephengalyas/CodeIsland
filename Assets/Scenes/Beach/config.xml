@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<beach>
+  <!-- Contains the position of the goblin and the main character. -->
+  <config>
+    <mainCharXPos>498.6276</mainCharXPos>
+    <mainCharYPos>-1377.589</mainCharYPos>
+    <goblinXPos>291</goblinXPos>
+    <goblinYPos>-612</goblinYPos>
+  </config>
+  <!-- Contains the user's progress through the level. -->
+  <progress>
+    <!-- The goblin moves to the main character. -->
+    <step1>false</step1>
+    <!-- The goblin and main character speak. -->
+    <step2>false</step2>
+    <!-- The goblin runs off of the screen. -->
+    <step3>false</step3>
+    <!-- The main character moves towards the cave. -->
+    <step4>false</step4>
+  </progress>
+</beach>
