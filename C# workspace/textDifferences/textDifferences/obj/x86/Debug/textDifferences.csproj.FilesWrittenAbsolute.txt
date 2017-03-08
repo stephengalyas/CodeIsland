@@ -1,0 +1,5 @@
+/Users/Mike/CSProjects/textDifferences/textDifferences/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/Mike/CSProjects/textDifferences/textDifferences/bin/Debug/textDifferences.exe.mdb
+/Users/Mike/CSProjects/textDifferences/textDifferences/bin/Debug/textDifferences.exe
+/Users/Mike/CSProjects/textDifferences/textDifferences/obj/x86/Debug/textDifferences.exe
+/Users/Mike/CSProjects/textDifferences/textDifferences/obj/x86/Debug/textDifferences.exe.mdb
