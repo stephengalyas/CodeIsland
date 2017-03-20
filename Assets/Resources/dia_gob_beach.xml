@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+File name: dia_gob_beach.xml
+Date created: March 17, 2017
+Last modified: March 17, 2017 by Stephen Galyas.
+Last modified changes: Created the file.
+Purpose: This XML file contains the dialogue for the goblin on the beach.
+		 There are two sets of dialogue. One set is chosen depending on whether or not the player has already spoken to the goblin.
+-->
+
+<goblin>
+	<novisit> <!-- The player has not spoken to the goblin. -->
+		<body>Hey, you! I've never seen you around the island before. Welcome to Code Island!</body>
+		<body>I saw your ship get destroyed out at sea. It's a miracle you were able to swim to shore.</body>
+		<body>Code Island is a pretty cool place. There are many areas of the island to explore and plenty of people to meet!</body>
+		<body>However, we have been experiencing some problems with bugs on the island . . . Ahh, don't worry about it.</body>
+		<body>Follow the path to discover what lies ahead!</body>
+	</novisit>
+	<nextvisit> <!-- The player has already spoken to the goblin. -->
+		<body>The beach is beautiful, isn't it? I love feeling the sun on my skin.</body>
+		<body>See that path over there? Every person who has walked on it has had their life changed.</body>
+		<body>Do not be afraid! Great things lie ahead.</body>
+	</nextvisit>
+</goblin>

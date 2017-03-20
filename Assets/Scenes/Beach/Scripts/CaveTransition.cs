@@ -29,7 +29,7 @@ public class CaveTransition : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D coll)
     {
         // First, save the player's progress.
-        MCLoadSaveBeach.SaveProgress(true, true); // Save the user's progress.
+        //MCLoadSaveBeach.SaveProgress(true, true); // Save the user's progress.
 
         // Second, save the complete status in the Accounts config file.
         SceneManager.LoadScene(4); // Load the cave level.

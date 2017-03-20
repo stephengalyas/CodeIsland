@@ -2,6 +2,8 @@
  * This class is responsible for the automatic movement of the goblin.
  * Depending on the main character's progress, the goblin will move to a different location on the level.
  * Requires GobDialogueManager, provides to GobCollisionHandler.
+ * 
+ * THIS CLASS IS NO LONGER USED.
 */
 
 using UnityEngine;
@@ -49,20 +51,20 @@ public class GobMovement : MonoBehaviour {
     /// </summary>
     void FixedUpdate ()
     {
-        if (MCGodScriptBeach.gobAtPlayer == false) // The goblin has not reached the main character.
-        {
-            // Keep moving the goblin toward the main character until it has reached the character's location.
-            MCGodScriptBeach.gobAtPlayer = MoveToLocation(mainChar.transform.position.x, mainChar.transform.position.y);
-        }
-
-        else if (MCGodScriptBeach.dialogueBoxFinished == true) // The goblin has reached the character and is done talking to the main character.
-        {
-            if (MCGodScriptBeach.gobOffMap == false) // The goblin has not moved off of the map.
-            {
-                // Make the goblin walk off the map.
-                MCGodScriptBeach.gobOffMap = MoveToLocation(autoMove.transform.position.x, autoMove.transform.position.y);
-            }
-        }
+        // if (MCGodScriptBeach.gobAtPlayer == false) // The goblin has not reached the main character.
+        // {
+        //     // Keep moving the goblin toward the main character until it has reached the character's location.
+        //     MCGodScriptBeach.gobAtPlayer = MoveToLocation(mainChar.transform.position.x, mainChar.transform.position.y);
+        // }
+		// 
+        // else if (MCGodScriptBeach.dialogueBoxFinished == true) // The goblin has reached the character and is done talking to the main character.
+        // {
+        //     if (MCGodScriptBeach.gobOffMap == false) // The goblin has not moved off of the map.
+        //     {
+        //         // Make the goblin walk off the map.
+        //         MCGodScriptBeach.gobOffMap = MoveToLocation(autoMove.transform.position.x, autoMove.transform.position.y);
+        //     }
+        // }
     }
 
     /// <summary>

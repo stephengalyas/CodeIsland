@@ -1,14 +1,16 @@
 ﻿/* Team Python          Last edit made by: Stephen Galyas           Created on: December 11, 2016         Last modified on: December 11, 2016            Published on: December 19 21, 2016
- * This is the "god" script for the Main Character.
- * This class will contain all public variables that may be accessed throughout the game, such as booleans to track the character's progress and the score.
+ * This is the "god" script for the Main Character on the Beeach.
+ * This class will contain all public variables that may be accessed throughout the level, such as booleans to track the character's progress and the score.
  * Depends on MCMovement and MCLoadSave.
+ * 
+ * THIS CLASS IS CURRENTLY NOT BEING USED.
 */
 
 using System;
 using UnityEngine;
 using System.Collections;
 
-public class MCGodScriptBeach : MonoBehaviour {
+public class PlayerBeachGod : MonoBehaviour {
 
     //---------------------------------------------------------------Level progress booleans-------------------------------------------------------------------
     /// <summary>
@@ -56,19 +58,6 @@ public class MCGodScriptBeach : MonoBehaviour {
     /// This method instantiates all associated objects when the level is loaded. 
     /// </summary>
     void Start () {
-
-        // Get progress from save file.
-        bool status = MCLoadSaveBeach.LoadProgress(true, true); // Get the status of loading progress from the config file.
-        if(status == false) // Error loading save data. Set default values.
-        {
-            gobAtPlayer = false;
-            gobOffMap = false;
-            playerAtCave = false;
-            dialogueBoxFinished = false;
-            levelScore = 0;
-            completed = false;
-            levelTime = DateTime.Now.Date;
-        }
-        startTime = DateTime.Now; // Get the current time.
+		// Do nothing.
     }
 }

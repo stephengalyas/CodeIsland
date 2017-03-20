@@ -8,7 +8,7 @@ using System.Xml;
 using UnityEngine;
 using System.Collections;
 
-public class MCLoadSaveBeach : MonoBehaviour {
+public class PlayerBeachLS : MonoBehaviour {
 
     /// <summary>
     /// The object used to load and save data (once the game has been published).
@@ -80,11 +80,11 @@ public class MCLoadSaveBeach : MonoBehaviour {
                 int score = Convert.ToInt32(nodes[1].InnerText);
 
                 // Update time and score.
-                MCGodScriptBeach.levelTime = DateTime.Now.Date; // Sets the date to today, BUT A TIME OF 00:00:00.
-                MCGodScriptBeach.levelTime.AddMinutes(minutes); // Add minutes to the DateTime object.
-                MCGodScriptBeach.startTime = DateTime.Now;
+                // MCGodScriptBeach.levelTime = DateTime.Now.Date; // Sets the date to today, BUT A TIME OF 00:00:00.
+                // MCGodScriptBeach.levelTime.AddMinutes(minutes); // Add minutes to the DateTime object.
+                // MCGodScriptBeach.startTime = DateTime.Now;
 
-                MCGodScriptBeach.levelScore = score;
+                // MCGodScriptBeach.levelScore = score;
 
                 if (testing == true) // Testing. Display status.
                 {
@@ -100,11 +100,11 @@ public class MCLoadSaveBeach : MonoBehaviour {
                 return false; // Return and load default values.
             } // Close catch block.
 
-            MCGodScriptBeach.completed = false;
-            MCGodScriptBeach.gobAtPlayer = false;
-            MCGodScriptBeach.dialogueBoxFinished = false;
-            MCGodScriptBeach.gobOffMap = false;
-            MCGodScriptBeach.playerAtCave = false;
+            // MCGodScriptBeach.completed = false;
+            // MCGodScriptBeach.gobAtPlayer = false;
+            // MCGodScriptBeach.dialogueBoxFinished = false;
+            // MCGodScriptBeach.gobOffMap = false;
+            // MCGodScriptBeach.playerAtCave = false;
 
             // All data successfully loaded. Return true.
             return true;
@@ -155,14 +155,14 @@ public class MCLoadSaveBeach : MonoBehaviour {
             try
             {
                 // Calculate elapsed time.
-                TimeSpan elapsedTime = DateTime.Now - MCGodScriptBeach.startTime; // Calculate total time spent playing the level.
-                DateTime newLvlTime = MCGodScriptBeach.levelTime.AddMinutes(elapsedTime.TotalMinutes); // Add the elapsed time to the loaded time
+                // TimeSpan elapsedTime = DateTime.Now - MCGodScriptBeach.startTime; // Calculate total time spent playing the level.
+                // DateTime newLvlTime = MCGodScriptBeach.levelTime.AddMinutes(elapsedTime.TotalMinutes); // Add the elapsed time to the loaded time
                                                                                                        // and store it in a new DateTime object.
-                TimeSpan calcTime = newLvlTime - DateTime.Now.Date; // Recalculate the total number of minutes spent playing the level.
+                //TimeSpan calcTime = newLvlTime - DateTime.Now.Date; // Recalculate the total number of minutes spent playing the level.
                                                                     // DateTime.Now.Date contains time 00:00:00.
-                xmlDoc.SelectSingleNode("/config/general/time").InnerText = calcTime.TotalMinutes.ToString(); // Save minutes.
+                //xmlDoc.SelectSingleNode("/config/general/time").InnerText = calcTime.TotalMinutes.ToString(); // Save minutes.
 
-                xmlDoc.SelectSingleNode("/config/general/score").InnerText = MCGodScriptBeach.levelScore.ToString();
+                // xmlDoc.SelectSingleNode("/config/general/score").InnerText = MCGodScriptBeach.levelScore.ToString();
 
                 xmlDoc.Save(path); // Save the config file BACK TO THE RESOURCES FOLDER. This is independent of whether or not the game has been built. 
 

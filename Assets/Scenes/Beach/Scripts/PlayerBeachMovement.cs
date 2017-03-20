@@ -1,4 +1,4 @@
-﻿/* Team Python          Last edit made by: Stephen Galyas           Created on: December 11, 2016         Last modified on: December 11, 2016            Published on: December 19 21, 2016
+﻿/* Team Python          Last edit made by: Stephen Galyas           Created on: December 11, 2016         Last modified on: March 17, 2017           Published on: N/A
  * This class handles the movement of the main character.
  * The update method uses booleans to check if the character will move via user input or a special predefined path.
  * Uses the MCGodScriptBeach class.
@@ -7,14 +7,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class MCMovementBeach : MonoBehaviour {
+public class PlayerBeachMovement : MonoBehaviour {
 
     //---------------------------------------------------------------Game object components-------------------------------------------------------------------
-    /// <summary>
-    /// The collider at the entrance to the cave (another level).
-    /// </summary>
-    public GameObject caveEntrance;
-
     /// <summary>
     /// The Rigidbody2D object of the main character.
     /// </summary>
@@ -41,26 +36,34 @@ public class MCMovementBeach : MonoBehaviour {
     /// </summary>
     void FixedUpdate ()
     {
-        if (MCGodScriptBeach.gobOffMap == false)
-        {
-            // Do nothing.
-        }
-
-        else if (MCGodScriptBeach.playerAtCave == false)
-        {
-
-            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
-            {
-                MCGodScriptBeach.playerAtCave = MoveToLocation(caveEntrance.transform.position.x, caveEntrance.transform.position.y);
-            }
-            else // No user input. Make the player stop moving.
-            {
-                anim.SetBool("isWalking", false);
-            }
-        }
+		MoveToLocation (); // Move the character.
     }
 
-    /// <summary>
+	/// <summary>
+	/// Default code to move the character.
+	/// </summary>
+	private bool MoveToLocation()
+	{
+		Vector2 movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); // Create a Vector2 object that gets the horizontal and vertical input from the user.
+
+		if (movement != Vector2.zero) // If the user is pressing a movement button on the input device.
+		{
+			anim.SetBool("isWalking", true); // Update the Animator object's boolean.
+			anim.SetFloat("input_x", movement.x); // Set the horizontal movement value.
+			anim.SetFloat("input_y", movement.y); // Set the vertical movement value.
+		}
+		else // If there is no movement input from the user.
+		{
+			anim.SetBool("isWalking", false); // Update the Animator object's boolean.
+		}
+
+		//control.Move(new Vector3(movement.x, movement.y, 0) * 1.5f);
+		rb.MovePosition(rb.position + (movement * 2)); // Moves one meter per 60 frames, not one meter per frame.
+
+		return true;
+	} // Close MoveToLocation().
+
+	/// <summary>
     /// Moves the main character to a particular location on the screen.
     /// </summary>
     /// <param name="xCoor">The x-coordinate that the character is to move to.</param>
