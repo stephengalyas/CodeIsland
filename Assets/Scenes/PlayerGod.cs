@@ -10,7 +10,7 @@ using System.Collections;
 /// <summary>
 /// The ultimate god class for the player. This class is used throughout the game and is not level-dependent.
 /// </summary>
-public class PlayerGod
+public class PlayerGod : MonoBehaviour
 {
 	/// <summary>
 	/// A boolean that permits the player to move their character.

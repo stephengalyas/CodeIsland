@@ -36,7 +36,9 @@ public class PlayerBeachMovement : MonoBehaviour {
     /// </summary>
     void FixedUpdate ()
     {
-		MoveToLocation (); // Move the character.
+		if (PlayerGod.canMove == true) {
+			MoveToLocation (); // Move the character.
+		}
     }
 
 	/// <summary>
